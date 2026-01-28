@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+.vscode/
+
+# Data (raw + processed datasets)
+network_anomaly_dataset/
+*.csv
+
+# Archives
+*.zip
+
+# Logs
+*.log
