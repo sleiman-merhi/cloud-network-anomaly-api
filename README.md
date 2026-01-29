@@ -47,7 +47,7 @@ Example outputs:
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ![Architecture](docs/architecture.png)
 
