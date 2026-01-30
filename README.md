@@ -51,7 +51,6 @@ Example outputs:
 
 ![Architecture](docs/architecture.png)
 
-**Architecture summary:**
 
 
 ---
