@@ -40,7 +40,7 @@ An **Isolation Forest** model is trained and then deployed as a **REST API** usi
 ## 📊Results & Validation
 
 ### Anomaly Score 
-![Anomaly Score](isolation_anomaly_score.png)
+![Score](isolation_anomaly_score.png)
 ### Comparison between detected anomalies and labeled anomalies 
 ![Comparison](model_score_vs_provided_lables.png)
 
@@ -62,7 +62,7 @@ The API is deployed on AWS using:
 
 ---
 
-## Deployment proof
+## Deployment Proof
 
 | | |
 |---|---|
@@ -73,4 +73,4 @@ The API is deployed on AWS using:
 
 ## 📦 Tech Stack
 
-Python, Scikit-learn, Uvicorn, FastAPI, Docker, AWS (ECR, ECS, ALB)  
+Python, Scikit-learn, Pandas, Uvicorn, FastAPI, Docker, AWS (ECR, ECS, ALB), Matplotlib  
