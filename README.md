@@ -1,4 +1,4 @@
-# Network Anomaly Detection – ML + AWS Deployment
+# 🚀Network Anomaly Detection – ML + AWS Deployment
 
 End-to-end project for detecting network anomalies using machine learning and deploying the model as a production-ready API on AWS.
 
@@ -6,8 +6,12 @@ This project demonstrates a **full AI engineering pipeline**:
 data preparation → model training → validation → API serving → containerization → cloud deployment.
 
 ---
+### ❓ What problem are we solving?
 
-## Project Overview
+Reliable network connectivity is essential, and early issue detection helps prevent failures, minimize downtime, and maintain service quality.
+
+---
+## 📌Project Overview
 
 The goal of this project is to detect anomalous behavior in network telemetry data
 (e.g. throughput, latency, packet loss, jitter) using an **unsupervised machine learning approach**.
@@ -15,18 +19,16 @@ The goal of this project is to detect anomalous behavior in network telemetry da
 An **Isolation Forest** model is trained and then deployed as a **REST API** using **FastAPI**, **Docker**, and **AWS ECS (Fargate)** behind an **Application Load Balancer**.
 
 ---
+### 🤖 Why Isolation Forest?
 
-## Machine Learning Approach
+- Designed for anomaly detection when abnormal events are rare  
+- Does not require labeled downtime data  
+- Fast and scalable for large telemetry datasets  
+- Produces an anomaly score to measure how unusual each data point is
 
-- **Problem type:** Unsupervised anomaly detection  
-- **Model:** Isolation Forest  
-- **Why Isolation Forest:**  
-  - Works well when anomalies are rare  
-  - No labeled data required  
-  - Efficient and interpretable  
+---
+### 🔧 Pipeline Steps
 
-
-### Key steps
 1. Data cleaning & feature selection  
 2. Feature scaling (StandardScaler)  
 3. Model training with contamination tuning  
@@ -37,25 +39,11 @@ An **Isolation Forest** model is trained and then deployed as a **REST API** usi
 
 ## 📊 Results & Validation
 
-- Model-detected anomalies vs provided anomaly labels
-- Visual inspection of anomaly scores over time
-- Tuned contamination rate for realistic anomaly detection
-
-Example outputs:
-- Anomaly score timeline
-- Comparison between detected anomalies and labeled anomalies
+Anomaly Score ![Anomaly Score](docs/isolation_anomaly_score.png)
+Comparison between detected anomalies and labeled anomalies ![Comparison](docs/model_score_vs_provided_lables.png)
 
 ---
-
-## System Architecture
-
-![Architecture](docs/architecture.png)
-
-
-
----
-
-## Cloud Deployment (AWS)
+## ☁️ Cloud Deployment (AWS)
 
 The API is deployed on AWS using:
 
@@ -65,9 +53,22 @@ The API is deployed on AWS using:
 - **Application Load Balancer** – public HTTP access
 - **FastAPI + Uvicorn** – API framework and ASGI server
 
+---
+## 🏗️ System Architecture
+
+![Architecture](docs/architecture.png)
+
+---
+
 ### Deployment proof
 
 | | |
 |---|---|
 | Swagger UI running on AWS | ECS service running |
 | ![Swagger](docs/aws-swagger.png) | ![ECS](docs/ecs-cluster-running.png) |
+
+---
+
+## 📦 Tech Stack
+
+Python, Scikit-learn, Uvicorn, FastAPI, Docker, AWS (ECR, ECS, ALB)  
