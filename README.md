@@ -6,7 +6,7 @@ This project demonstrates a **full AI engineering pipeline**:
 data preparation → model training → validation → API serving → containerization → cloud deployment.
 
 ---
-## ❓ What problem are we solving?
+## ❓What problem are we solving?
 
 Reliable network connectivity is essential, and early issue detection helps prevent failures, minimize downtime, and maintain service quality.
 
@@ -19,7 +19,7 @@ The goal of this project is to detect anomalous behavior in network telemetry da
 An **Isolation Forest** model is trained and then deployed as a **REST API** using **FastAPI**, **Docker**, and **AWS ECS (Fargate)** behind an **Application Load Balancer**.
 
 ---
-## 🤖 Why Isolation Forest?
+## 🤖Why Isolation Forest?
 
 - Designed for anomaly detection when abnormal events are rare  
 - Does not require labeled downtime data  
@@ -27,7 +27,7 @@ An **Isolation Forest** model is trained and then deployed as a **REST API** usi
 - Produces an anomaly score to measure how unusual each data point is
 
 ---
-## 🔧 Pipeline Steps
+## 🔧Pipeline Steps
 
 1. Data cleaning & feature selection  
 2. Feature scaling (StandardScaler)  
@@ -37,10 +37,12 @@ An **Isolation Forest** model is trained and then deployed as a **REST API** usi
 
 ---
 
-## 📊 Results & Validation
+## 📊Results & Validation
 
-Anomaly Score ![Anomaly Score](isolation_anomaly_score.png)
-Comparison between detected anomalies and labeled anomalies ![Comparison](model_score_vs_provided_lables.png)
+### Anomaly Score 
+![Anomaly Score](isolation_anomaly_score.png)
+### Comparison between detected anomalies and labeled anomalies 
+![Comparison](model_score_vs_provided_lables.png)
 
 ---
 ## ☁️ Cloud Deployment (AWS)
