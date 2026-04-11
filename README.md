@@ -19,6 +19,11 @@ The goal of this project is to detect anomalous behavior in network telemetry da
 An **Isolation Forest** model is trained and then deployed as a **REST API** using **FastAPI**, **Docker**, and **AWS ECS (Fargate)** behind an **Application Load Balancer**.
 
 ---
+## 📦 Tech Stack
+
+Python, Scikit-learn, Pandas, Uvicorn, FastAPI, Docker, AWS (ECR, ECS, ALB), Matplotlib  
+
+---
 ## 🤖Why Isolation Forest?
 
 - Designed for anomaly detection when abnormal events are rare  
@@ -68,9 +73,3 @@ The API is deployed on AWS using:
 |---|---|
 | Swagger UI running on AWS | ECS service running |
 | ![Swagger](docs/aws-swagger.png) | ![ECS](docs/ecs-cluster-running.png) |
-
----
-
-## 📦 Tech Stack
-
-Python, Scikit-learn, Pandas, Uvicorn, FastAPI, Docker, AWS (ECR, ECS, ALB), Matplotlib  
