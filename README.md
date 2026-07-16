@@ -1,9 +1,6 @@
 # 🚀Network Anomaly Detection – ML + AWS Deployment
 
-End-to-end project for detecting network anomalies using machine learning and deploying the model as a production-ready API on AWS.
-
-This project demonstrates a **full AI engineering pipeline**:
-data preparation → model training → validation → API serving → containerization → cloud deployment.
+Designed and deployed a cloud-native REST API on AWS for real-time network anomaly detection. The application uses an Isolation Forest model exposed through FastAPI, containerized with Docker, and deployed on Amazon ECS Fargate behind an Application Load Balancer.
 
 ---
 ## ❓What problem are we solving?
@@ -42,14 +39,6 @@ Python, Scikit-learn, Pandas, Uvicorn, FastAPI, Docker, AWS (ECR, ECS, ALB), Mat
 
 ---
 
-## 📊Results & Validation
-
-### Anomaly Score 
-![Score](isolation_anomaly_score.png)
-### Comparison between detected anomalies and labeled anomalies 
-![Comparison](model_score_vs_provided_lables.png)
-
----
 ## ☁️ Cloud Deployment (AWS)
 
 The API is deployed on AWS using:
@@ -61,9 +50,19 @@ The API is deployed on AWS using:
 - **FastAPI + Uvicorn** – API framework and ASGI server
 
 ---
+
 ## 🏗️ System Architecture
 
 ![Architecture](docs/architecture.png)
+
+---
+
+## 📊Results & Validation
+
+### Anomaly Score 
+![Score](isolation_anomaly_score.png)
+### Comparison between detected anomalies and labeled anomalies 
+![Comparison](model_score_vs_provided_lables.png)
 
 ---
 
